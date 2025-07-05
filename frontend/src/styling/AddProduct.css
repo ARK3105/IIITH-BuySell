@@ -1,0 +1,114 @@
+/* Enhanced AddProduct CSS */
+.add-product {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.add-product h2 {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.add-product form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.add-product input,
+.add-product select,
+.add-product textarea {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.add-product input:focus,
+.add-product select:focus,
+.add-product textarea:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+}
+
+.add-product textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.add-product button {
+  padding: 14px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 18px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.add-product button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.add-product button:focus {
+  outline: none;
+}
+
+.product-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 15px;
+}
+
+/* Input Field Labels */
+.add-product label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+/* Subtle Hover Effects for Inputs */
+.add-product input:hover,
+.add-product select:hover,
+.add-product textarea:hover {
+  border-color: #007bff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .add-product {
+    padding: 20px;
+  }
+
+  .add-product form {
+    gap: 15px;
+  }
+
+  .add-product input,
+  .add-product select,
+  .add-product textarea {
+    font-size: 14px;
+  }
+
+  .add-product button {
+    font-size: 16px;
+  }
+}
